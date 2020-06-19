@@ -527,6 +527,10 @@
                         <td>生鮮流通課 係長</td>
                     </tr>
                     <tr>
+                        <th>役職</th>
+                        <td>係長</td>
+                    </tr>
+                    <tr>
                         <th>雇用形態</th>
                         <td>正社員</td>
                     </tr>
@@ -740,6 +744,1560 @@
             </tbody>
         </table>
 
+        <div class="jumbotron">
+            <h1>
+                株式会社ダッドウェイ
+            </h1>
+            <table class="table table-bordered stripchart">
+                <tbody>
+                    <tr>
+                        <th>事業内容</th>
+                        <td>ベビー用品輸入販売</td>
+                    </tr>
+                    <tr>
+                        <th>従業員数</th>
+                        <td>300名</td>
+                    </tr>
+                    <tr>
+                        <th>所属</th>
+                        <td>管理本部 ICTグループ</td>
+                    </tr>
+                    <tr>
+                        <th>役職</th>
+                        <td>アシスタントマネージャー</td>
+                    </tr>
+                    <tr>
+                        <th>雇用形態</th>
+                        <td>正社員</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> 
+
+        <div class="badge badge-light">
+            2018年10月
+        </div>
+
+        <h2>
+            ファイルサーバー障害復旧
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            停電対応時に作業手順に不備がありストレージが破損、1日半かけ復旧<br>
+                            ストレージがLUを認識しなくなってしまう<br>
+                            ストレージの正規起動手順や修復手順を実施し、なんとかLUが見えることを確認<br>
+                            LU内のVMの起動を試みるが、ファイルシステム不整合により起動せず<br>
+                            ファイルシステムの修復を実施し、起動可能な状態となる<br>
+                            起動後、OSのブート領域の故障により、NTFSの修復が必要となる<br>
+                            25TBのNTFSのスキャンを行うと月曜日の業務開始に間に合わないことが発覚<br>
+                            ファイルサーバーを新規構築し、ブート領域の故障したLUからデータのみ移行することで復旧<br>
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>HP StoreEasy</li>
+                            <li>VMware ESXi</li>
+                            <li>Windows Server 2012 R2</li>
+                            <li>NTFS</li>
+                            <li>WSFC</li>
+                        </ul>
+                    </td>
+                    <td>
+                        リーダーを務める<br>
+                        5名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>
+            次期商品情報管理システム検証
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            Ruby on Rails5での検証を再開<br>
+                            Bootstrap4を使ったUI周りの検証、CoffeeScriptを使用してWebAPIサーバーと連携
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Bootstrap 4</li>
+                            <li>CoffeeScript</li>
+                            <li>Ruby on Rails</li>
+                            <li>CentOS</li>
+                        </ul>
+                    </td>
+                    <td>
+                        リーダーを務める<br>
+                        4名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>
+            EDI操作自動化
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            Amazon WebEDIの操作をSelenium(Ruby)により自動化<br>
+                            特定箇所のスクロール操作で苦戦<br>
+                            別ウィンドウで表示される帳票を印刷する操作で自動化出来ない懸念に陥る<br>
+                            ソース内のURLを直接呼び出すことでSeleniumの制御下に置くことに成功<br>
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Selenium</li>
+                            <li>Ruby</li>
+                            <li>Google Chrome</li>
+                            <li>Windows 10</li>
+                        </ul>
+                    </td>
+                    <td>
+                        リーダーを務める<br>
+                        3名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>
+            基幹システム WebAPI化
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            既存DBを利用したWebAPIサーバーの構築を行う<br>
+                            検索機能などの基本的なプログラムの基を作成<br>
+                            既存DBを破損しないこと、SELECT以外を行わないことに注意した<br>
+                            継承を使用して基本機能(select, top, order by, where大小, where完全一致)であればモデルの定義のみで使用できるよう考慮<br>
+                            基幹システムのあらゆる情報をWebAPI経由で取り出すことが出来るようになる
+                            特定商品のリアルタイム在庫をExcel上から当WebAPIを呼ぶ出すことで確認できるようになる
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Ruby on Rails</li>
+                            <li>Oracle 12c</li>
+                            <li>Cent OS</li>
+                        </ul>
+                    </td>
+                    <td>
+                        1名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>
+            監査自動化
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            監査機能の悪用を防ぐため、監査ログの取得を自動化<br>
+                            DBに自動登録し、差分をメールで自動送信するプログラムを作成
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>GSuite Vault</li>
+                            <li>Python</li>
+                            <li>Selenium</li>
+                            <li>Oracle 12c</li>
+                        </ul>
+                    </td>
+                    <td>
+                        リーダーを務める<br>
+                        2名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="badge badge-light">
+            2018年9月
+        </div>
+
+        <h2>
+            Zabbixサーバー移行
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            DBのサーバーを対象にDBのクエリ数を取得するためHinemosからの監視をZabbixへ移行
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Ubuntu</li>
+                            <li>CentOS</li>
+                            <li>MediaWiki</li>
+                            <li>MariaDB</li>
+                            <li>Zabbix</li>
+                        </ul>
+                    </td>
+                    <td>
+                        リーダーを務める<br>
+                        2名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>
+            Web関連プログラムのGit完全移行
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            内製している商品情報サイト、顧客情報管理サイトのソースを完全Git化<br>
+                            ステージング環境用のWebサーバー(IIS)の構築
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Git</li>
+                            <li>CentOS</li>
+                        </ul>
+                    </td>
+                    <td>
+                        リーダーを務める<br>
+                        2名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>
+            Google Drive 全社展開
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            部下からの提案を推進<br>
+                            GoogleDrive の利用ポリシーの検討、設定、マニュアル作成、全社展開
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Google Drive</li>
+                        </ul>
+                    </td>
+                    <td>
+                        リーダーを務める<br>
+                        4名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="badge badge-light">
+            2018年7月
+        </div>
+
+        <h2>
+            Oracle SQLチューニング
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            Statspackの導入を実施、応答速度が問題になっているクエリの調査から改善までを部下と一緒に考えながら対応<br>
+                            3時間かかっても応答のなかった画面を10秒未満で表示されるよう改善<br>
+                            Oracle Textによる全文検索機能を使用し、顧客名の部分一致検索を高速化<br>
+                            LIKE検索をやめるため、現場へアプリケーションの使い方についてヒアリング<br>
+                            ヒアリングに基づいてアプリケーションのページング処理やSQLを改修
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Oracle 12c</li>
+                            <li>Statspack</li>
+                            <li>SQL</li>
+                            <li>Oracle Text</li>
+                            <li>ASP.NET</li>
+                        </ul>
+                    </td>
+                    <td>
+                        リーダーを務める<br>
+                        2名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>
+            商品状態管理自動化
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            在庫数に応じて変動する商品状態を自動で変化するようにシステム化<br>
+                            商品状態は既存の情報で誰もが確認する最重要情報だった<br>
+                            しかし、手動による運用のためリアルタイム性に欠け、精度も低かった<br>
+                            このため電話による問い合わせが多発していた
+                            更新頻度が低く信頼性が低かった情報に意味をもたせ、問い合わせ頻度を激減<br>
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>PL/SQL</li>
+                            <li>Powershell</li>
+                            <li>Oracle 12c</li>
+                        </ul>
+                    </td>
+                    <td>
+                        リーダーを務める<br>
+                        2名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>
+            サーバーのパッチ適用自動化
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            部下からのWSUSの提案を推進<br>
+                            WSUSはパッチの選定が前提となっており、パッチの要・不要を仕分けたいか確認、もっとやるべきことがあると進言<br>
+                            ほぼすべてのサーバーは冗長化済みだったため、隔月で片方ずつパッチを適用するようジョブを構成<br>
+                            パッチを当てた側をアクティブにして運用を行い、問題があればすぐにスタンバイ側に切り替える方式を共同で発案<br>
+                            ジョブとシェルの開発支援    
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Hinemos</li>
+                            <li>Windows Server 2012 R2</li>
+                            <li>Powershell</li>
+                            <li>WSFC</li>
+                        </ul>
+                    </td>
+                    <td>
+                        リーダーを務める<br>
+                        2名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="badge badge-light">
+            2018年6月
+        </div>
+
+        <h2>
+            MariaDB導入
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            冗長化構成(galera cluster)のDBを構築するために導入<br>
+                            インフラのパフォーマンスを意識しないアプリケーション開発を行いたいと考えた<br>
+                            冗長化されたデータベースがあればリードレプリカなどの仕組みによりパフォーマンスの向上もインフラで提供できると考えた<br>
+                            既存のMediawikiサーバーのコンテンツを移行<br>
+                            蓄積されたノウハウが失われないよう冗長化する
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>CentOS</li>
+                            <li>MariaDB</li>
+                            <li>galera cluster</li>
+                        </ul>
+                    </td>
+                    <td>
+                        1名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="badge badge-light">
+            2018年4月
+        </div>
+        
+        <h2>
+            LB導入
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            予算がないため、既存のVMware上にLBを構築できないか検討<br>
+                            NginxによるLBの導入、Keepalivedを使用した冗長化構成構築<br>
+                            LBを構築することでWebサーバーのURLの集約や、冗長化を柔軟に構成できるようにした<br>
+                            インフラの柔軟な冗長化が可能になり、DBの冗長化が課題として残る
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>CentOS</li>
+                            <li>Nginx</li>
+                        </ul>
+                    </td>
+                    <td>
+                        リーダーを務める<br>
+                        3名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>
+            勘定奉行サーバークラウド移行
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            オンプレの勘定奉行サーバーをPaaSに移行<br>
+                            RDPでPaaSに接続して奉行を使用する方式だったが、RDPが頻繁に切断される問題が発生<br>
+                            2か月経っても原因すらわからず経理部門と部下から相談を受け、火消し役として参加<br>
+                            部下とともにtcpdumpによりネットワークパケットを追ったがネットワーク上の問題ではないと判断<br>
+                            RDPの切断について情報を探したところ、RDPのバージョンによって切断される事象があることを突き止め解決<br>
+                            ベンダーの調査が一向に進まない状態だったため改善要求などを行う
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>勘定奉行</li>
+                            <li>Remote Desktop</li>
+                        </ul>
+                    </td>
+                    <td>
+                        火消し役として参加<br>
+                        3名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="badge badge-light">
+            2017年12月
+        </div>
+
+        <h2>
+            倉庫ネットワーク追加の設計、進捗管理
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            SIer、工事業者様との課題管理や各種調整、社内からの要望や既存の問題点を解決する構成設計などを行う<br>
+                            既存LANを活かしたVLANの設計などを行う
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>L2</li>
+                            <li>L3</li>
+                            <li>Tag VLAN</li>
+                        </ul>
+                    </td>
+                    <td>
+                        リーダーを務める<br>
+                        4名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="badge badge-light">
+            2017年11月
+        </div>
+
+        <h2>
+            FAXペーパーレス化
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            パッケージソフトウェアの完成度が低く、操作自動化系のソフトウェアと組み合わせることなどを提案<br>
+                            Excelで管理されていたデータをFAX用データベースへ統合する提案などを行う<br>
+                            最終的にはパッケージソフトウェアの完成度が低く、単体テストまで行っているような状態となったため、開発元へその旨通知し、改善を依頼し、導入を見送る<br>
+                            言いにくい事などを率先して発言し、プロジェクトを凍結する判断をしたことを評価される
+                        </div>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        リーダーを務める<br>
+                        4名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>
+            Zabbixサーバー構築
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            Zabbixサーバーを冗長構成で構築、検証<br>
+                            Linux未経験の部下に勉強もかねて実装を担当してもらい技術支援を行う
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>CentOS</li>
+                            <li>Zabbix</li>
+                        </ul>
+                    </td>
+                    <td>
+                        リーダーを務める<br>
+                        2名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="badge badge-light">
+            2017年9月
+        </div>
+
+        <h2>
+            受注データ変換ツール開発
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            特殊なフォーマットの受注データ(TXT、Excel)を基幹システムで取り込むことができるCSVに変換するプログラムを作成<br>
+                            ファイルの配置などを変えることで現場運用効率化がさらに発揮されるよう提案<br>
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Powershell</li>
+                            <li>Oracle 12c</li>
+                        </ul>
+                    </td>
+                    <td>
+                        リーダーを務める<br>
+                        2名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="badge badge-light">
+            2017年06月
+        </div>
+
+        <h2>
+            G Suite導入
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            WebAPI(Ruby)を使用したアカウント管理自動化スクリプトの開発支援<br>
+                            Excelファイルを読み込み、組織情報や社員情報を日次で同期する仕組みのアイデア出しや、要件定義、Rubyでの開発サポート、マニュアル作成、説明会開催、問い合わせ対応などを行う<br>
+                            BYODでのG Suite利用を社長に交渉、人事制度、通信費などの問題のリストアップと調整、全社通知などを行う
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Ruby</li>
+                            <li>G Suite</li>
+                        </ul>
+                    </td>
+                    <td>
+                        リーダーを務める<br>
+                        6名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="badge badge-light">
+            2017年03月
+        </div>
+        
+        <h2>
+            中途入社採用の面接を担当
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            Java、.NET、ネットワーク、運用の4分野の経験者をそれぞれ1名採用
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>
+            新入社員4人の教育を担当
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            教育カリキュラムと講師を担当、情報処理技術者試験合格へ向けたサポートを担当<br>
+                            半年の教育で4人中1人合格、その後も別試験に挑戦を自主的に行う文化も教育<br>
+                            教育内容なMediawikiにまとめ、コンテンツ化した内容を交代で読んでもらい、フィードバックや補足を行う形で進める<br>
+                            社内に公開してあったため、IT部門以外の方からも読んでるよ、面白いね等のお声がけを頂く
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="badge badge-light">
+            2016年12月
+        </div>
+        
+        <h2>
+            勘定奉行バージョンアップ
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            WSFCで冗長化構成となっているSQL Serverへの移行を実施<br>
+                            企業の基盤データを保有するインフラが冗長化されていないことを問題視し、移行の機会に冗長化された環境へ乗せ換え<br>
+                            ストレージはSPOFの構成
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Windows Server 2012 R2</li>
+                            <li>勘定奉行</li>
+                            <li>SQL Server</li>
+                        </ul>
+                    </td>
+                    <td>
+                        1名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>
+            Gitの導入
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            開発とデプロイの高速化を目的にGitサーバーが欲しいと考える<br>
+                            SNSの利用は認められなかったため、Gitサーバーを社内に構築<br>
+                            スクリプトや各種ツールを徐々にGitサーバーでのバージョン管理に移行<br>
+                            hookを使用して正/副のgitリポジトリを作成、正側にpushすると、副側にもpushされるように構成
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Git</li>
+                            <li>CentOS</li>
+                        </ul>
+                    </td>
+                    <td>
+                        1名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="badge badge-light">
+            2016年4月
+        </div>
+
+        <h2>
+            社員情報一元化システムの開発
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            各種管理表をひとつのExcelへ統合するための支援を行う<br>
+                            さらに、作成されたExcelを各種システムに合わせたデータへ出力するためのプログラム(VBA)の作成を行う<br>
+                            人事、労務担当者より各種システムへのマスタ入力業務が多すぎるため、システムを統合したいと相談を受ける<br>
+                            ヒアリングの結果、各種システムは得意分野を持っており、統合することは困難であると判断<br>
+                            問題となっているのは、システムが分かれていることではなく、データフローが一本化されていないことであると説明<br>
+                            データフローの最上流となるシステムから、CSV等でデータ出力するアイデアを提案する
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Excel VBA</li>
+                        </ul>
+                    </td>
+                    <td>
+                        リーダーを務める<br>
+                        2名
+                    </td>
+                </tr>
+            </tbody>
+        </table>        
+
+        <h2>
+            画像一括加工ツールの開発
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            画像を正方形に一括加工、ファイル名を一括で変更、.aiファイルを.jpgへ一括変換するツールを作成<br>
+                            その後の改修案件でサポートを担当<br>
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Powershell</li>
+                            <li>ImageMagic</li>
+                        </ul>
+                    </td>
+                    <td>
+                        1名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="badge badge-light">
+            2016年2月
+        </div>
+                
+        <h2>
+            既存Webシステムの改修を提案、技術選定を担当
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            各種技術、フレームワークなどを調査し、導入へ向けた検証を開始する<br>
+                            Ruby on Rails、ASP.NET MVC、Django、Oracle APEX、kintone
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Ruby on Rails</li>
+                            <li>ASP.NET MVC</li>
+                            <li>Django</li>
+                            <li>Oracle APEX</li>
+                            <li>kintone</li>
+                        </ul>
+                    </td>
+                    <td>
+                        リーダーを務める<br>
+                        2名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="badge badge-light">
+            2015年12月
+        </div>
+        
+        <h2>
+            社内Wikiの立ち上げ
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            ExcelやTextで保存されている各種ノウハウを集約するために社内Wikiを立ち上げる<br>
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Ubuntu</li>
+                            <li>MediaWiki</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </td>
+                    <td>
+                        リーダーを務める<br>
+                        2名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>
+            VPNサーバーの導入を提案、担当
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            PacketiX VPNサーバーの導入
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>PacketiX VPN</li>
+                        </ul>
+                    </td>
+                    <td>
+                        リーダーを務める<br>
+                        2名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="badge badge-light">
+            2015年10月
+        </div>
+        
+        <h2>
+            販売管理システムへのCSV取込機能の追加
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            手入力作業が多い各種伝票データのCSV取込機能の現場との調整、SIerとの調整を担当
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </td>
+                    <td>
+                        リーダーを務める<br>
+                        4名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>
+            ファイルサーバーの移行、運用効率化
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            ユーザーアンケートとアンケート結果のフィードバックを行う<br>
+                            Powershellによるacl適用を行い管理業務負担を低減する<br>
+                            DFSを用い、WSFCでのクラスタ構成とする<br>
+                            また、VSSを使用してバックアップ運用を簡素化<br>
+                            ユーザーアンケートでは全社員を対象に匿名でアンケートを集計<br>
+                            結果を集計、グラフ化し、懸念点とそれに対する対応策などを発信
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Powershell</li>
+                            <li>Windows Server 2012 R2</li>
+                            <li>NTFS</li>
+                            <li>DFS</li>
+                            <li>VSS</li>
+                            <li>WSFC</li>
+                            <li>NAS</li>
+                        </ul>
+                    </td>
+                    <td>
+                        1名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="badge badge-light">
+            2015年9月
+        </div>
+        
+        <h2>
+            検品基準書システムの開発
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            既存Webシステム(ASP.NET)に機能を追加する形で新規開発<br>
+                            部門内でAccessを用いて運用されていた機能をWeb化<br>
+                            マスタ管理機能を導入などすることで手入力の手間を最小限に抑える<br>
+                            個別管理されていた日本語版・英語版・中国語版を統合するなどの改善を行う<br>
+                            他部門に公開できる箇所と公開できない箇所を区別<br>
+                            印刷用の帳票はCSSのmediaクエリを使用し、不要項目を非表示にするなどでA4 1枚に収めた<br>
+                            AccessからOracleへ移行した際に、マスタ項目の集約調整に苦戦<br>
+                            他部門からの問い合わせをシステムへ誘導できるようになる<br>
+                            品質保証部門の問い合わせコストが削減され、他部門も待ち時間が短縮された
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>ASP.NET</li>
+                            <li>Oracle 12c</li>
+                        </ul>
+                    </td>
+                    <td>
+                        1名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="badge badge-light">
+            2015年8月
+        </div>
+        
+        <h2>
+            営業担当検索機能の追加
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            既存Webシステム(ASP.NET)に機能を追加する形で新規開発<br>
+                            代表電話にかかってくる電話の営業担当への取次ぎを省力化するために提案<br>
+                            組織拡大で担当を覚えられなくなっていた営業部にも効果が波及<br>
+                            誰か作ったのかと問い合わせが起きるほどの反響があった<br>
+                            得意先読み仮名の情報を元にひらがな、カナタナどちらでも検索できるように工夫
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>ASP.NET</li>
+                            <li>Oracle 12c</li>
+                        </ul>
+                    </td>
+                    <td>
+                        1名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="badge badge-light">
+            2015年6月
+        </div>
+        
+        <h2>
+            サーバー仮想化
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            OpenStack、VMwareの比較検討し、VMwareを選定、初期構築と各種サーバーの移行を担当<br>
+                            相見積、製品選定を行う<br>
+                            幹部会向けの説明資料の作成、説明を行い承認を頂く<br>
+                            他メンバーは仮想サーバーの経験がなく、かつLinuxの理解も浅かったため、VMwareを選定<br>
+                            順次、P2V移行を実施し、冗長化されていないサーバーも仮想化に合わせて冗長化(Pacemaker、WSFC、KeepAlive)構成とする
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>OpenStack</li>
+                            <li>VMware ESXi</li>
+                        </ul>
+                    </td>
+                    <td>
+                        リーダーを務める<br>
+                        3名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="badge badge-light">
+            2014年10月
+        </div>
+        <h2>
+            セキュリティソフトウェアをクラウド型のソフトウェアへ移行
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            本社、倉庫、店舗で個別管理されていたライセンスの統合を実現し、管理コストを低減<br>
+                            個別のタイミングでライセンス更新運用が発生し、かつ製品ごと、エディションごとの管理が行われており煩雑な運用となっていた
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Panda Security</li>
+                        </ul>
+                    </td>
+                    <td>
+                        2名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>
+            CRMシステム移行のデータ移行
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            プロジェクトが破綻し火消し役として参加<br>
+                            データ移行が行えておらず本番運用ができていなかった内製CRMシステム(ASP.NET)のデータ移行(AccessからOracle 12c)を行う<br>
+                            スケジュールがなく、1日で引継ぎを受け、翌日にデータ移行を実施<br>
+                            その後、Webシステム化されたCRMシステムの改修を担当するようになる
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Access</li>
+                            <li>Oracle 12c</li>
+                        </ul>
+                    </td>
+                    <td>
+                        2名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>
+            ジョブ管理、監視システム(Hinemos)の導入を提案、担当
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                        各種スクリプト(bat、vbsからpowershell化)の見直しも担当し、再利用性を高めるためリファクタリングするなどの対応を行う
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="badge badge-light">
+            2014年2月
+        </div>
+        
+        <h2>
+            BtoBサイトの本番運用への移行を担当
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            BtoBサイトはベンダーに発注し開発済み<br>
+                            各種マスタデータの登録と現場からの運用要件を満たす仕組みが開発されておらずとん挫していた<br>
+                            現場担当者と商品管理部部長より相談を受け、火消し役として参加<br>
+                            各種マスタデータの調整、現場からの要望にあわせたデータ加工ツールの作成などを行い本番運用開始することに成功<br>
+                            マスタデータの手入力が問題となることが予見されたため、既存システムからのマスタデータ自動連携の提案と構築を行う
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Powershell</li>
+                        </ul>
+                    </td>
+                    <td>1名</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>
+            自社倉庫ネットワークの無線LAN化を提案、担当
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            それまで家庭用機器で運用されており不安定だった無線LANを安定稼働させる<br>
+                            IPv4アドレスの枯渇も同時に対応するため、未使用のYAMAHA社製ルーターとAPを使用しタグVLANとNAPTを使用した基幹配線を変更しない構成を実現
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>YAMAHA RTX1100</li>
+                            <li>YAMAHA RTX1200</li>
+                            <li>YAMAHA WLX302</li>
+                        </ul>
+                    </td>
+                    <td>2名</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="badge badge-light">
+            2013年10月
+        </div>
+        
+        <h2>
+            バックアップシステムの導入を提案、担当
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            既存の環境はファイルのコピーがバックアップとして運用されており、リストアが運用が確率されていなかった<br>
+                            バックアップアプライアンスを導入してシステム化<br>
+                            クライアントライセンスが不要という特徴から、Barracuda Backupを採用<br>
+                            稟議を作成して幹部へ説明を行うなどの社内調整から構築、導入を行う
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Barracuda Backup</li>
+                        </ul>
+                    </td>
+                    <td>2名</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>
+            PCデータ移行ツール作成
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            手動で行っていたPCデータ移行をPowershellを実行すれば、NW経由でコピーされるように改善<br>
+                            データ移行でPCに張り付かなければならない時間を削減
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Powershell</li>
+                        </ul>
+                    </td>
+                    <td>1名</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>
+            グループウェアの導入
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            グループウェアの選定、導入を行い、導入前のSIerとの調整や、導入後の各種問い合わせへの対応を行う<br>
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Desknet's</li>
+                            <li>Cybozu</li>
+                            <li>Group Spirit</li>
+                        </ul>
+                    </td>
+                    <td>6名</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>
+            データベースサーバーの移行
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            老朽化に伴うデータベースサーバーの移行を行う<br>
+                            Windowsで運用されていたOracleをLinux上へ移行<br>
+                            Statspackによるパフォーマンス情報の収集、データ領域、配置の見直し、定期的なバックアップの取得などの改善を行う
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Oracle 12c</li>
+                            <li>CentOS</li>
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="badge badge-light">
+            2012年10月
+        </div>
+
+        <h2>
+            流通BMSによるEDI化を担当
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            各種データの加工を最小限に抑える<br>
+                            運用マニュアルの作成と現場への教育を実施<br>
+                            手間の少なさとマニュアルの完成度を評価頂く<br>
+                            他社向けのEDIの仕組みも刷新してほしいと依頼され、以降EDIの担当となる
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>EOS名人</li>
+                            <li>SQL Server</li>
+                            <li>Oracle</li>
+                        </ul>
+                    </td>
+                    <td>
+                        1名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>
+            社内PCの基準スペックを変更
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            PCのスペックが低く業務へ悪影響を与えていると判断<br>
+                            同価格帯でもより良いスペックのPCが購入できることを確認<br>
+                            相見積、価格交渉を行う<br>
+                            ルールを規定化し、文書として公開
+                        </div>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        1名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>
+            店長用PCの展開を担当
+        </h2>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width: 60%">プロジェクト内容</th>
+                <th style="width: 20%">技術</th>
+                <th style="width: 20%">規模</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            15店舗の店長のシフト表から日程調整を行い、各店舗に訪問<br>
+                            各店長へPCの使用方法のレクチャーと、質問への回答を行う
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Windows 7</li>
+                            <li>Office</li>
+                        </ul>
+                    </td>
+                    <td>
+                        1名
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        
+        
+        
+        
+        
+        
+        
 
 
 
@@ -782,6 +2340,7 @@
                 </tbody>
             </table>
         </div> 
+        
         <div class="badge badge-light">
             2006年4月
         </div>
